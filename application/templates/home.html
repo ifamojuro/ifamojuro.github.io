@@ -1,0 +1,77 @@
+
+{%extends 'layout.html'%}
+{% block title %}
+    Homepage
+{% endblock %}
+{% block main %}
+
+<div class="wrap">
+	<div class="fleft">
+		<div id="carousel_pics class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="front-pg-photo">
+						<img src="{{url_for('static', filename='img/developer.jpg')}}"> 
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="front-pg-photo">
+						<img src="{{url_for('static', filename='img/start.jpg')}}"> 
+					</div>
+				</div>
+				<div class="carousel-item" style="background-color:#cc0000;">
+					<div class="front-pg-photo">
+						<img src="{{url_for('static', filename='img/founder.jpg')}}"> 
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="front-pg-photo">
+						<img src="{{url_for('static', filename='img/a_mind_at_work.jpg')}}"> 
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class ="fright">
+		<div class="masthead-row-one">
+			Hello!
+		</div>
+		<div class="masthead-row-two">
+			My name is
+		</div>
+		<div class="masthead-row-three">
+			Ife!
+		</div>
+		<div class="masthead-row-four">
+			I am...
+		</div>
+		<div id="carousel_text" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="slide-1">
+						A Developer
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide_2">
+						A Goofer
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide_3">
+						A Founder
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide_4">
+						A Mind at Work
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+
+ {% endblock %}
