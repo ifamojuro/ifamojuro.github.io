@@ -4,24 +4,25 @@
   bottom: 0; 
   left: 0;
   overflow:auto;
+  width:100vw;
 }
 
 .fleft{
-    float:left; 
-    width: 50%;
-    height: 50%;
+  float:left; 
+  width:50%;
+  height:100%;
 }
 
 .fright{
   float: right;
-  height:100%;
   width:50%;
+  height:100%;
 }
 
 
 img {
-    max-width: 100%;
-    height: auto;
+    width:100%;
+    height:100%;
 }
 
 @font-face {
@@ -32,10 +33,10 @@ img {
 .masthead-row-one
 {
   color: #00CC99;
-  height: 20vh;
+  height: 20%;
   text-align: center;
   font-family: "masthead_font";
-  font-size:500%;
+  font-size:10vh;
   background-color: #f2f2f2;
   grid-row: 1;
   vertical-align: center;
@@ -47,7 +48,7 @@ img {
   height: 20%;
   text-align: center;
   font-family: "masthead_font";
-  font-size:500%;
+  font-size:10vh;
   background-color:rgb(128, 214, 192);
   grid-row: 2;
 }
@@ -59,7 +60,7 @@ img {
   height: 20%;
   text-align: center;
   font-family: "masthead_font";
-  font-size:500%;
+  font-size:10vh;
   background-color:#00CC99;
   grid-row: 3;
 }
@@ -70,7 +71,7 @@ img {
   height: 5%;
   text-align: center;
   font-family: "masthead_font";
-  font-size:200%;
+  font-size:3vh;
   background-color:#0000cc;
   grid-row: 3;
 }
@@ -83,7 +84,7 @@ img {
 .slide-1
 {
   font-family: "code_font";
-  font-size:700%;
+  font-size:10vh;
   width:100%;
   height:35%;
   text-align: center;
@@ -100,7 +101,7 @@ img {
 
 .slide_2{
   font-family:"goofy";
-  font-size:700%;
+  font-size:10vh;
   width:100%;
   height:35%;
   text-align: center;
@@ -119,7 +120,7 @@ img {
 
 .slide_3{
   font-family: "fancy";
-  font-size:900%;
+  font-size:10vh;
   width:100%;
   height:35%;
   text-align: center;
@@ -136,7 +137,7 @@ img {
 
 .slide_4{
   font-family: "pops";
-  font-size:600%;
+  font-size:10vh;
   width:100%;
   height:35%;
   line-height: 200%;
