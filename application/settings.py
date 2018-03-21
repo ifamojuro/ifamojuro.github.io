@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-REPO_NAME = "ifamojuro.github.io"  # Used for FREEZER_BASE_URL
+REPO_NAME = "ifamojuro/ifamojuro.github.io"  # Used for FREEZER_BASE_URL
 DEBUG = True
 
 # Assumes the app is located in the same directory
