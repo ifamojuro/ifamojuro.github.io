@@ -5,73 +5,44 @@
 {% endblock %}
 {% block main %}
 
-<div class="wrap">
-	<div class="fleft">
-		<div id="carousel_pics class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner" role="listbox">
-				<div class="carousel-item active">
-					<div class="front-pg-photo">
-						<img src="{{url_for('static', filename='img/developer.jpg')}}"> 
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="front-pg-photo">
-						<img src="{{url_for('static', filename='img/start.jpg')}}"> 
-					</div>
-				</div>
-				<div class="carousel-item" style="background-color:#cc0000;">
-					<div class="front-pg-photo">
-						<img src="{{url_for('static', filename='img/founder.jpg')}}"> 
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="front-pg-photo">
-						<img src="{{url_for('static', filename='img/a_mind_at_work.jpg')}}"> 
-					</div>
-				</div>
-			</div>
-		</div>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+
+
+<div class = "bg_cont">
+	<div class="overlay">
 	</div>
-	<div class ="fright">
-		<div class="masthead-row-one">
-			Hello!
+		
+	<div class="wrap">
+		<div class="fleft">	
 		</div>
-		<div class="masthead-row-two">
-			My name is
-		</div>
-		<div class="masthead-row-three">
-			Ife!
-		</div>
-		<div class="masthead-row-four">
-			I am...
-		</div>
-		<div id="carousel_text" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner" role="listbox">
-				<div class="carousel-item active">
-					<div class="slide-1">
-						A </br>
-						Developer
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="slide_2">
-						A </br> Goofer
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="slide_3">
-						A </br> Founder
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="slide_4">
-						A </br> Mind at Work
-					</div>
-				</div>
+		<div class ="fright">
+		<div style="text-align: center;">
+			<h1 style="font-size:20vh;">Ifedayo</h1>
+			<h1 style="font-size:20vh;"> Famojuro</h1>
+			<div id="typed-strings" >
+			<span>Developer</span>
+		    <p>Founder</p>
+		    <p>Goofer</p>
 			</div>
-		</div>	
+			<span id="typed" style="white-space:pre;font-family:code_font;font-size:19vh;padding-top:10vh;"></span>
+		</div>
+		</div>
 	</div>
+
+	<img class="bg" src="{{url_for('static', filename='img/photo-ratio-resize.jpg')}}">
 </div>
+
+<script type="text/javascript">
+	var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 60,
+    backSpeed: 60,
+    backDelay: 50,
+    startDelay: 100,
+    loop: true
+  });
+</script>
 
 
 
